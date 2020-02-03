@@ -1,12 +1,12 @@
 # set project for the provider as a whole to avoid having to repeat it for each resource
 provider "google" {
   project = "${var.project}"
-  version = "~> 2.7"
+  version = "~> 3.6.0"
 }
 
 provider "google-beta" {
   project = "${var.project}"
-  version = "~> 2.7"
+  version = "~> 3.6.0"
 }
 
 provider "random" {

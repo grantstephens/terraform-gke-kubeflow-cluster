@@ -50,10 +50,6 @@ resource "google_container_cluster" "kubeflow_cluster" {
       disabled = false
     }
 
-    kubernetes_dashboard {
-      disabled = true
-    }
-
     network_policy_config {
       disabled = "${var.network_policy_enabled == false ? true : false}"
     }
